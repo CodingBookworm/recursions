@@ -5,12 +5,20 @@ public class RecursiveCountdown {
         countDown(3);
     }
 
-    public static void countDown(int num) {
+    public static void countDown(int num, String prefix) {
+        System.out.println(prefix + "Entering countdown with " +num)
+        Scanner keyboard = new Scanner(System.in);
+        int number = keyboard.nextInt();
+        System.out.println(number + " contains " + getNumberOfZeros(number,"> "));
         if (num == 0) {
             System.out.println("That's all, folks!");
         } else {
-            System.out.print(num + " ");
-            countDown(num - 1);
+            System.out.print(prefix + "calling countdown with " + (num-1));
+            countDown(num - 1, "-" +prefix);
         }
+        System.out.println("Exiting countdown with " +num)
     }
+
 }
+}
+
