@@ -17,13 +17,13 @@ public class countOddNumbers {
             int result;
             if (n == 0) {
                 System.out.println("setting result to 0 because n=0 an 0 is even");
-                result = 1;
+                result = 0;//n is o and that is even
             }else if (n < 10) {
-                if(10%n=0){
+                if(n%2=0){
                 System.out.println("setting result to 0 there are no odd digits." );
-                result = 0; //n has one digit that is not 0
+                result = 0; //n has one digit that is not odd
                 }else{
-                    System.out.println("setting result to 0 there are no odd digits.");
+                    System.out.println("setting result to 1 since an odd digit was found.");
                     result = 1; //n has one digit that is odd
                 }
             }else if (n % 10 == 0) {
