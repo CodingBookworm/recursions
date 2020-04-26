@@ -20,7 +20,7 @@ public class RecursionDemo2 {
         System.out.println(prefix +" Entering getNumberOfZeros with "+ n);
         int result;
         if (n == 0) {
-            System.out.println("setting result to 1 because n==0");
+            System.out.println("setting result to 1 because n=0");
             result = 1;
         }else if (n < 10) {
             System.out.println("setting result to 0 because n = " +n );
